@@ -1,0 +1,6 @@
+.img-view__container {
+  display: flex;
+  justify-content: center;
+  
+  padding: 36px;
+}

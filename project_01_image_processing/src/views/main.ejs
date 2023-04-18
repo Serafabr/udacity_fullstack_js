@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%- include('includes/head.ejs') %>
+  <link rel="stylesheet" href="/images.css">
+</head>
+<body>
+  <header class="header">
+    <%- include('includes/header.ejs') %>
+  </header>
+  <main>
+    <section class="images">
+      <div class="images__title">Click on any image to resize it!</div>
+      <ul class="images__list">
+        <% imagesPath.forEach((imagePath) => { %>
+          <li class="images__item">
+            <div class="image__container">
+              <a href="/resize/<%= imagePath %>">
+                <img src="/<%= imagePath %>" alt="Image">
+              </a>
+            </div>
+          </li>
+        <% }) %>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>

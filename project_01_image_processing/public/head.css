@@ -1,0 +1,36 @@
+body {
+  margin: 0;
+  padding: 0;
+  
+  font-size: 16px;
+}
+
+.header {
+  background-color: #0069ff;
+}
+
+.header__list {
+  display: flex;
+  flex-direction: row;
+  
+  margin: 0;
+  padding: 16px;
+  
+  list-style: none;
+}
+
+.header__item {
+  padding: 0 12px;
+}
+
+.header__item a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+.header__item a:hover,
+.header__item a.selected {
+  text-decoration: underline;
+}
